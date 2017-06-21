@@ -26,8 +26,8 @@ int main() {
  
   // Output results here
   printf("Total numbers %d, percent = %f \n", numnums, (float)(numnums/total));
-  printf("Total lowerCase letters %d \n", lowerCase, (float)(lowerCase/total));
-  printf("Total upperCase letters %d \n", upperCase, (float)(upperCase/total));
+  printf("Total lowerCase letters %d  percent = %f \n", lowerCase, (float)(lowerCase/total));
+  printf("Total upperCase letters %d percent = %f \n", upperCase, (float)(upperCase/total));
    
   return 0;
 }
