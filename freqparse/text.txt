@@ -1,0 +1,33 @@
+#include <stdio.h>
+int main() {
+  // initialize variables;
+ 
+  char c;
+  int numnums = 0;
+  int lowerCase =0;
+  int upperCase =0;
+  int total = 0;
+  while ((c = getchar()) != EOF) {
+	if(c >= 0 && c  < 10){
+		numnums++;
+	}
+	else if(c >= 'a' && c <= 'z'){
+		lowerCase++;
+	}
+	else if(c >= 'A' && c <= 'Z'){	
+		upperCase++;
+	}
+	total++;a.out
+	
+    // process one character
+  }
+
+
+ 
+  // Output results here
+  printf("Total numbers %d, percent = %f \n", numnums, (float)(numnums/total));
+  printf("Total lowerCase letters %d \n", lowerCase, (float)(lowerCase/total));
+  printf("Total upperCase letters %d \n", upperCase, (float)(upperCase/total));
+   
+  return 0;
+}
