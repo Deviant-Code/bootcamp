@@ -1,19 +1,21 @@
 #include <stdio.h>
 
-int number = 0;
-
 int factorial(int number){
-    int factorialResult = 0;
+
+    int result = 0;
     if( number = 0){
        return 1;
     }
+
     else{
-        int currentNum;
+        int currentNum = 1;
         for(currentNum = 1; currentNum <= number; currentNum++){
-            factorialResult += (number*currentNum);
+            result += (currentNum*number);
+            currentNum++;
         }
-        return factorialResult;
+        return result;
     }
+
 }
 
 int main() {
