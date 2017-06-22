@@ -5,11 +5,11 @@ int number = 0;
 int factorial(int number){
     int factorialResult = 0;
     if( number = 0){
-       return (factorialResult + 1);
+       return 1;
     }
     else{
-
-        for(int currentNum =1; currentNum < number; currentNum++){
+        int currentNum;
+        for(currentNum = 1; currentNum <= number; currentNum++){
             factorialResult += (number*currentNum);
         }
         return factorialResult;
@@ -17,9 +17,9 @@ int factorial(int number){
 }
 
 int main() {
-  for(int i = 0; i <= 20; i++){
-     int result = factorial(i);
-     printf("%d \n", (result));
+  int i;
+  for(i = 0; i <= 20; i++){
+     printf("Number: %d \t Factorial: %d \n", i, (factorial(i)));
   }
 
   return 0;
