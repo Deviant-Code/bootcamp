@@ -4,13 +4,13 @@ int number = 0;
 
 int factorial(int number){
     int factorialResult = 0;
-    if( number = '0'){
-       return factorialResult;
+    if( number = 0){
+       return (factorialResult + 1);
     }
     else{
 
-        for(int start = 1; start <= number; start++){
-            factorialResult += (start*start);
+        for(int currentNum =1; currentNum < number; currentNum++){
+            factorialResult += (number*currentNum);
         }
         return factorialResult;
     }
@@ -18,7 +18,8 @@ int factorial(int number){
 
 int main() {
   for(int i = 0; i <= 20; i++){
-     printf("%d \n", factorial(i));
+     int result = factorial(i);
+     printf("%d \n", (result));
   }
 
   return 0;
